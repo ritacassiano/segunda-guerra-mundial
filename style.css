@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* ======================================================
+   CORPO DA PÁGINA
+====================================================== */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -9,344 +14,567 @@ body {
     color: #222;
 }
 
-/* CABEÇALHO */
+
+/* ======================================================
+   CABEÇALHO
+====================================================== */
 
 header {
     background-color: #f4f6f8;
     color: #1f3c5b;
     text-align: center;
-    padding: 90px 20px;
+    padding: 35px 20px 10px;
 }
+
 
 header h1 {
     margin: 0;
     font-size: 46px;
 }
 
+
 header .periodo {
     font-size: 20px;
     margin: 10px 0 30px;
 }
 
-header h2 {
+
+/* ======================================================
+   DESTAQUE DAS PÁGINAS
+====================================================== */
+
+.destaque-inicio {
+    max-width: 1000px;
+    margin: 25px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+/* IMAGEM DO DESTAQUE */
+
+.destaque-inicio img {
+    width: 430px;
+    max-width: 48%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* TEXTO DO DESTAQUE */
+
+.texto-destaque {
+    flex: 1;
+    text-align: left;
+}
+
+
+.texto-destaque h2 {
     font-size: 28px;
+    color: #1f3c5b;
+
+    margin-top: 0;
     margin-bottom: 15px;
 }
 
-header .introducao {
-    max-width: 800px;
-    margin: auto;
+
+.texto-destaque h3 {
+    font-size: 24px;
+    color: #1f3c5b;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+.texto-destaque p {
     font-size: 18px;
     line-height: 1.6;
 }
 
-/* MENU */
+
+/* ======================================================
+   MENU
+====================================================== */
 
 nav {
     background-color: white;
+
     text-align: center;
+
     padding: 15px;
+
     border-bottom: 1px solid #ccc;
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
 }
 
+
 nav a {
     color: #1f3c5b;
+
     text-decoration: none;
+
     margin: 0 15px;
+
     font-weight: bold;
 }
+
 
 nav a:hover {
     color: #c0392b;
 }
 
-/* CONTEÚDO PRINCIPAL */
+
+/* ======================================================
+   CONTEÚDO PRINCIPAL
+====================================================== */
 
 main {
     width: 85%;
     max-width: 1000px;
+
     margin: auto;
 }
 
-/* SEÇÕES */
+
+/* ======================================================
+   SEÇÕES
+====================================================== */
 
 section {
     background-color: white;
-    margin: 30px 0;
+    margin: 10px 0 30px;
     padding: 30px;
     border-radius: 8px;
 }
 
+
 section h2 {
     color: #1f3c5b;
+
     border-bottom: 2px solid #1f3c5b;
+
     padding-bottom: 10px;
 }
 
-/* CARDS */
+
+/* ======================================================
+   CARDS
+====================================================== */
 
 article {
     background-color: #f7f7f7;
+
     margin-top: 20px;
+
     padding: 20px;
+
     border-left: 5px solid #1f3c5b;
+
     border-radius: 5px;
 }
 
+
 article h3 {
     margin-top: 0;
+
     color: #1f3c5b;
 }
 
-/* PARÁGRAFOS */
+
+/* ======================================================
+   PARÁGRAFOS
+====================================================== */
 
 p {
     line-height: 1.6;
 }
 
-/* ACORDEÃO */
+
+/* ======================================================
+   ACORDEÃO
+====================================================== */
 
 .titulo-acordeao {
     width: 100%;
+
     background-color: transparent;
+
     border: none;
+
     font-size: 18px;
+
     font-weight: bold;
+
     color: #1f3c5b;
+
     text-align: left;
+
     cursor: pointer;
+
     display: flex;
+
     justify-content: space-between;
 }
+
 
 .titulo-acordeao span {
     font-size: 24px;
 }
 
+
 .conteudo-acordeao {
     display: none;
+
     margin-top: 15px;
 }
 
-/* EIXO E ALIADOS */
+
+/* ======================================================
+   EIXO E ALIADOS
+====================================================== */
 
 .blocos-guerra {
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 30px;
+
     margin: 30px 0;
 }
 
+
 .bloco-guerra {
     width: 280px;
+
     min-height: 150px;
+
     background-color: white;
+
     border: 1px solid #ddd;
+
     border-radius: 10px;
+
     padding: 25px;
+
     cursor: pointer;
+
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+
     transition: 0.3s;
 }
 
+
 .bloco-guerra:hover {
     transform: translateY(-5px);
+
     border-color: #1f3c5b;
 }
 
+
 .bloco-guerra h3 {
     color: #1f3c5b;
+
     margin-top: 0;
+
     font-size: 22px;
 }
+
 
 .bloco-guerra p {
     font-size: 16px;
 }
 
+
 .bloco-guerra span {
     font-size: 13px;
+
     color: #777;
 }
 
+
 .seta-guerra {
     font-size: 35px;
+
     color: #999;
 }
 
+
 .conteudo-guerra {
     display: none;
+
     background-color: #f7f7f7;
+
     border-left: 5px solid #1f3c5b;
+
     padding: 20px;
+
     margin: 20px 0;
+
     border-radius: 5px;
 }
 
+
 .conteudo-guerra h3 {
     color: #1f3c5b;
+
     margin-top: 0;
 }
 
-/* LINHA DO TEMPO */
+
+/* ======================================================
+   LINHA DO TEMPO
+====================================================== */
 
 .linha-tempo {
     margin-top: 40px;
 }
 
+
 .anos {
     position: relative;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     margin: 35px 20px 40px;
 }
 
+
 .anos::before {
     content: "";
+
     position: absolute;
+
     top: 50%;
+
     left: 5%;
+
     right: 5%;
+
     height: 3px;
+
     background-color: #cbd3da;
+
     z-index: 0;
 }
 
+
 .anos button {
     position: relative;
+
     z-index: 1;
+
     width: 80px;
+
     height: 80px;
+
     border-radius: 50%;
+
     background-color: white;
+
     color: #1f3c5b;
+
     border: 3px solid #1f3c5b;
+
     font-weight: bold;
+
     font-size: 15px;
+
     cursor: pointer;
+
     transition: 0.3s;
+
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
 }
 
+
 .anos button:hover {
     background-color: #1f3c5b;
+
     color: white;
+
     transform: translateY(-2px);
 }
 
+
 .anos button.ativo {
     background-color: #1f3c5b;
+
     color: white;
+
     transform: scale(1.12);
 }
 
+
 .evento {
     display: none;
+
     background-color: #f7f7f7;
+
     padding: 20px;
+
     margin-top: 20px;
+
     border-left: 5px solid #1f3c5b;
+
     border-radius: 5px;
 }
 
+
 .evento h4 {
     margin-top: 0;
+
     color: #1f3c5b;
+
     font-size: 19px;
 }
 
-/* QUIZ */
+
+/* ======================================================
+   QUIZ
+====================================================== */
 
 #quiz-container {
     margin-top: 20px;
 }
 
+
 #progresso {
     font-weight: bold;
+
     color: #1f3c5b;
 }
+
 
 #alternativas {
     display: flex;
+
     flex-direction: column;
+
     gap: 10px;
+
     margin: 20px 0;
 }
 
+
 #alternativas button {
     padding: 12px;
+
     border: 1px solid #1f3c5b;
+
     border-radius: 6px;
+
     background-color: white;
+
     color: #1f3c5b;
+
     cursor: pointer;
+
     text-align: left;
+
     font-size: 16px;
 }
+
 
 #alternativas button:hover {
     background-color: #e8edf2;
 }
 
+
 #alternativas button.correta {
     background-color: #d4edda;
+
     border-color: #2e7d32;
+
     color: #1b5e20;
 }
 
+
 #alternativas button.errada {
     background-color: #f8d7da;
+
     border-color: #c62828;
+
     color: #8e0000;
 }
+
 
 #alternativas button:disabled {
     cursor: default;
 }
 
+
 #feedback {
     margin-top: 15px;
+
     padding: 12px;
+
     background-color: #f4f6f8;
+
     border-radius: 5px;
+
     line-height: 1.5;
+
     font-weight: bold;
 }
+
 
 #proxima,
 #refazer {
     background-color: #1f3c5b;
+
     color: white;
+
     border: none;
+
     padding: 12px 20px;
+
     border-radius: 6px;
+
     cursor: pointer;
 }
+
 
 #proxima {
     display: none;
 }
 
+
 #refazer {
     font-weight: bold;
 }
+
 
 #proxima:hover,
 #refazer:hover {
     background-color: #c0392b;
 }
 
-/* RODAPÉ */
+
+/* ======================================================
+   RODAPÉ
+====================================================== */
 
 footer {
     background-color: #1f3c5b;
+
     color: white;
+
     text-align: center;
+
     padding: 20px;
+
     margin-top: 40px;
 }

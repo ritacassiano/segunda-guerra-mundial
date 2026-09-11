@@ -489,6 +489,10 @@ function mostrarBlocoGuerra(id) {
 // INÍCIO DO PROGRAMA
 // ======================================================
 
-// Chama a função para mostrar a primeira pergunta
-// assim que a página é carregada
-mostrarPergunta();
+// Verifica se existe o quiz na página atual
+let quiz = document.getElementById("quiz-container");
+
+// Se o quiz existir, mostra a primeira pergunta
+if (quiz) {
+    mostrarPergunta();
+}
